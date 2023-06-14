@@ -1,0 +1,383 @@
+/* 9 - Final Project Web Development - DEUTSCH
+
+
+WebDev-Abschlussprojekt
+
+Aufgabenbeschreibung finales Project:
+Aufgabe: Erstelle eine Webseite mit den gelernten Themen!
+Idee: Dir freigestellt, aber behaltete die Zeit im Auge.
+Tipp: Eine Webseite über ein Hobby/Dichselbst, etwas, das dich interessiert.
+Tipp: Nicht versuchen durch Zwang alle Themen vom Orientierungskurs einbauen, lieber eine klare strukturierte Seite.
+Projekt Ideen (Vorschläge):
+1. Resümee/Curriculum Vitae/ Lebenslauf Seite
+2. Landeseite (Landingpage, ist eine alleinstehende Seite, z.B. für den Zweck einer Marketing-Kampagne)
+3. Kleine Unternehmens/Firmenseite
+4. Band/Musik Webseite
+5. (Koch) Rezept Website
+6. Restaurant Seite
+7. Webseite über Herkunftsort oder Heimat (z.B. euer Geburtsland)
+8. Persönliches Portfolio (Schaukasten eigener Interessen und Leistungen)
+10. Touristische Seite
+11. Eine völlig andere Idee
+Präsentation:
+Screenshare in MS Teams (5 bis 10 Minuten pro Person)
+1. Erkläre deine Idee, worum geht es auf der Seite.
+2. Wie bist du herangegangen?
+3. Wie hast du dein Projekt in Code umgesetzt?
+4. Erzählt über eure Schwierigkeiten und eventuell, wie ihr sie überwunden habt!
+5. Ziehe ein Fazit: Was fandest du gut an, was nicht?
+Es gilt auch für den Projekttag: Anwesenheitspflicht. (Fragen können gestellt werden). */
+
+/* Erst Validator, dann Browser, dann Code zeigen */
+
+/* _________________________________________________________________________________________________ */
+
+/* NAVIGATION */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hp-nav {
+  /* border: 2px solid red; */
+  background-color: black;
+  padding: 10px 30px;
+  /* NAV FIXIERT */
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  /* NAV LEISTE IMMER IM VORDERGRUND */
+  z-index: 99;
+}
+
+.hp-nav a {
+  color: #ffeedd;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 15px;
+}
+
+.hp-nav a:hover {
+  color: green;
+}
+
+/* HEADER */
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  /* border: 2px solid blue; */
+  font-family: "Harry Potter", sans-serif;
+  color: #ffeedd;
+  font-size: 56px;
+}
+
+header p {
+  /* border: 2px solid red; */
+  margin: 30px 0;
+  color: #ffeedd;
+  font-size: 20px;
+}
+
+header div {
+  /* border: 2px solid white; */
+  width: 600px;
+  height: 90px;
+  margin-bottom: 50px;
+}
+
+.hp-header {
+  /* border: 2px solid yellow; */
+  padding: 0px 280px;
+  min-height: 100vh;
+  background-image: url("./images/harry.jpg.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Letter SECTION */
+
+.letter-class {
+  border: 2px solid black;
+  height: 100vh;
+  background-color: black;
+  background-image: url("./images/feet2.jpg.png");
+  background-position: bottom;
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+.letter-class h2 {
+  /* border: 2px solid green; */
+  font-size: 48px;
+  font-family: "Harry Potter", sans-serif;
+  color: #ffeedd;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.letter-class div {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* HOUSE SECTION */
+
+.house-class {
+  border: 2px solid black;
+  height: 100vh;
+  background-color: black;
+  background-image: url("./images/hogwarts1.png");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.house-class h2 {
+  /* border: 2px solid green; */
+  font-size: 48px;
+  font-family: "Harry Potter", sans-serif;
+  color: #ffeedd;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 70px;
+}
+
+.house-class a {
+  border: 3px solid grey;
+  width: fit-content;
+  color: #ffeedd;
+  background-color: grey;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.house-class a:hover {
+  color: #ffeedd;
+  background-color: green;
+  border: 2px solid green;
+}
+
+.house-class h4 {
+  color: #ffeedd;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 20px;
+  padding-right: 800px;
+}
+
+.house-class .card-container {
+  /* border: 2px solid green; */
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.house-class .card-container .card {
+  /* border: 2px solid red; */
+  width: 340px;
+  height: 680px;
+  margin: 10px;
+  background-color: grey;
+  border-radius: 20px;
+}
+
+.house-class .card-container .card .card-child {
+  /* border: 2px solid red; */
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  border-radius: 10px;
+}
+
+.house-class .card-container .card .card-child h3 {
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  font-family: "Harry Potter", sans-serif;
+}
+
+.house-class .card-container .card .card-child p {
+  margin: 15px 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+.house-class .card-container .card .card-child a {
+  font-weight: bold;
+  /* text-decoration: none; */
+  padding: 5px 0;
+}
+
+.house-class .card-container .card .card-top {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card01 {
+  background-image: url("./images/gryffindor.jpg");
+}
+
+.card02 {
+  background-image: url("./images/hufflepuff2.jpg");
+}
+
+.card03 {
+  background-image: url("./images/ravenclaw.jpg");
+}
+
+.card04 {
+  background-image: url("./images/slytherin.jpg");
+}
+
+.house-class .card-container .card .card-child div {
+  margin-top: 35px;
+}
+
+/* SPELLS SECTION */
+
+.spells-title {
+  height: 10vh;
+  background-color: black;
+  font-family: "Harry Potter", sans-serif;
+  color: #ffeedd;
+  /* border: 2px solid yellow; */
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.spells-class {
+  /* border: 2px solid green; */
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  background-image: url("./images/blackblue.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.spells-class div {
+  /* border: 2px solid red; */
+  display: flex;
+  color: white;
+  margin-top: 50px;
+}
+
+.spells-class div ul li {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+/* HOVER / BUTTON EFFEKT */
+
+.spells-class div a {
+  border: 3px solid rgb(65, 63, 63);
+  width: fit-content;
+  color: #ffeedd;
+  background-color: rgb(65, 63, 63);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.spells-class div a:hover {
+  color: #ffeedd;
+  background-color: green;
+  border: 2px solid green;
+}
+
+/* WORAUF WARTEST DU? */
+
+.hp-footer {
+  border: 2px solid black;
+  min-height: 200vh;
+  background-color: black;
+  background-image: url("./images/stars.jpg.jpg");
+  background-position: auto;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.hp-footer h6 {
+  color: #ffeedd;
+  margin-bottom: 30px;
+  /* border: 2px solid red; */
+  text-align: center;
+}
+
+.hp-footer h2 {
+  /* border: 2px solid green; */
+  font-size: 48px;
+  font-family: "Harry Potter", sans-serif;
+  color: #ffeedd;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.hp-footer h3 {
+  /* border: 2px solid green; */
+  font-size: 36px;
+  font-family: "Harry Potter", sans-serif;
+  color: #ffeedd;
+  text-align: center;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+
+.hp-footer img {
+  width: 185px;
+  height: 290px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.hp-footer table {
+  /* border: 2px solid red; */
+  margin-top: 100px;
+}
+
+.hp-footer table th {
+  /* border: 2px solid yellow; */
+  color: #ffeedd;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+}
+
+.hp-footer table td {
+  /* border: 2px solid green; */
+  color: #ffeedd;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  padding: 20px 40px;
+}

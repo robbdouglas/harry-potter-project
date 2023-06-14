@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- RESPONSIVITÄT -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- YARN FOR AOS -->
+    yarn add aos
+    <!-- IMPORT AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- IMPORT RESET CSS -->
+    <link rel="stylesheet" href="./reset.css" />
+    <!-- IMPORT CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- IMPORT HARRY POTTER FONT -->
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet" />
+    <!-- IMPORT GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- IMPORT FONTAWESOME ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Harry Potter</title>
+    <!-- HARRY POTTER AUDIO IN BACKGROUND -->
+    <embed src="./short-hp-audio.mp3" autostart="true" width="2" height="0" />
+  </head>
+
+  <!-- NAVIGATION -->
+
+  <body id="home-id">
+    <nav class="hp-nav">
+      <a href="#home-id">Home</a>
+      <a href="#letter-id">Dein Hogwarts Brief</a>
+      <a href="#house-id">Dein Hogwarts Haus</a>
+      <a href="#spells-id">Zauberspruch Lexikon</a>
+      <a href="#links-id">Worauf wartest du?</a>
+    </nav>
+
+    <!-- HEADER -->
+
+    <header class="hp-header">
+      <h1 data-aos="zoom-in-up">Willkommen, Muggel!</h1>
+      <div data-aos="zoom-in-up">
+        <p>Du bist ein Neuling in der Welt der Hexen und Zauberer?</p>
+        <p>Dann bist du hier genau richtig! Finde deinen Brief!</p>
+        <p>Klicke darauf und entdecke die magische Welt von Hogwarts!</p>
+        <a data-aos="fade-up" href="#letter-id"
+          ><img
+            src="./images/brief2.jpg"
+            alt="Hogwarts Briefumschlag"
+            width="600px"
+        /></a>
+      </div>
+    </header>
+
+    <!-- DEIN HOGWARTS BRIEF -->
+
+    <section id="letter-id" class="letter-class">
+      <h2 data-aos="fade-up">Dein Hogwarts Brief</h2>
+      <div data-aos="fade-up">
+        <img src="./images/brief3.jpg" alt="Hogwarts Brief" />
+      </div>
+    </section>
+
+    <!-- DEIN HOGWARTS HAUS -->
+
+    <section id="house-id" class="house-class">
+      <h2 data-aos="fade-up">Dein Hogwarts Haus</h2>
+      <div data-aos="fade-up">
+        <h4>
+          Sobald du in Hogwarts angekommen bist, wirst du in der "Großen Halle"
+          den "Sprechenden Hut" aufsetzen.
+        </h4>
+        <h4>Dieser wird dich einem der vier Häuser von Hogwarts zuteilen.</h4>
+        <h4>
+          Solltest du dir eines der Häuser ganz besonders wünschen, wird der
+          Sprechende Hut deinen Wunsch berücksichtigen.
+        </h4>
+        <h4>
+          Jedes Haus vereint verschiedene Kerneigenschaften und stellt während
+          deines Aufenthalts deine Familie dar.
+        </h4>
+        <h4>
+          <a
+            href="https://www.familie.de/tests/familienleben/harry-potter-haus-test-ravenclaw-hufflepuff-gryffindor-oder-slytherin/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Finde heraus, in welches Haus du gehörst!</a
+          >
+        </h4>
+      </div>
+
+      <!-- CARD CONTAINER -->
+      <div class="card-container" data-aos="fade-up">
+        <!-- Gryffindor -->
+        <div class="card">
+          <div class="card-child card-top card01"></div>
+          <div class="card-child card-bot">
+            <h3>Gryffindor</h3>
+            <div>
+              <p>Mut</p>
+              <p>Tapferkeit</p>
+              <p>Solidarität</p>
+            </div>
+          </div>
+        </div>
+        <!-- Hufflepuff -->
+        <div class="card">
+          <div class="card-child card-top card02"></div>
+          <div class="card-child card-bot">
+            <h3>Hufflepuff</h3>
+            <div>
+              <p>Loyalität</p>
+              <p>Hilfsbereitschaft</p>
+              <p>Gutmütigkeit</p>
+            </div>
+          </div>
+        </div>
+        <!-- Ravenclaw -->
+        <div class="card">
+          <div class="card-child card-top card03"></div>
+          <div class="card-child card-bot">
+            <h3>Ravenclaw</h3>
+            <div>
+              <p>Intelligenz</p>
+              <p>Kreativität</p>
+              <p>Originalität</p>
+            </div>
+          </div>
+        </div>
+        <!-- Slytherin -->
+        <div class="card">
+          <div class="card-child card-top card04"></div>
+          <div class="card-child card-bot">
+            <h3>Slytherin</h3>
+            <div>
+              <p>Gerissenheit</p>
+              <p>Ehrgeiz</p>
+              <p>Stolz</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ZAUBERSPRUCH LEXIKON -->
+
+    <section id="spells-id" class="spells-title">
+      <h2 data-aos="fade-up">Zauberspruch Lexikon</h2>
+    </section>
+    <section class="spells-class">
+      <div>
+        <ul>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Aberto"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Aberto</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Aufrufezauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Accio</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Wasser-Aufrufzauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Aquamenti</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Alarte_Ascendare"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Alarte Ascendare</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Entsperrungs-Zauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Alohomora</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Vergessenszauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Amnesia</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Anapneo"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Anapneo</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Sichtbarkeitszauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Aparecium</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Apparieren"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Apparate</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Aqua_Eructo"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Aqua Eructo</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Arania_Exumai"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Arania Exumai</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Verlangsamungszauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Arresto Momentum</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Ascendio"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ascendio</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Todesfluch"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Avada Kedavra</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Vogel-Heraufbeschwörungszauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Avis</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Bombarda"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Bombarda</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Bombarda_Maxima"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Bombarda Maxima</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Brackium_Emendo"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Brackium Emendo</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Kisten-Sprengzauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Cistem Aperio</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Verriegelungs-Zauberspruch"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Colloportus</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Sprengfluch"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Confringo</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Verwirrungszauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Confundo</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Cruciatus_Fluch"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Crucio</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Deletrius"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Deletrius</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Densaugeo"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Densaugeo</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Verscheuchezauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Depulso</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Abtrennzauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Diffindo</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Dissendium"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Dissendium</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Enervate"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Enervate</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Heilzauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Episkey</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Schwellzauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Engorgio</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Erecto"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Erecto</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Verschwindezauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Evanesco</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Patronuszauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Expecto Patronum</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Entwaffnungszauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Expelliarmus</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Ferula"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ferula</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Fianto_Duri"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Fianto Duri</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Fidelius-Zauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Fidelius-Zauber</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Grüne_Funken"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Grüne Funken</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Erstarrungszauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Immobilus</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Lähmzauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Impedimenta</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Imperius-Fluch"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Imperio</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Imperturbatio-Zauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Imperturbatio Zauber</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Inanimatus-Aufrufezauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Inanimatus Conjurus</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Feuerzauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Incendio</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Katzenjammer-Zauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Katzenjammer-Zauber</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Lacarnum_Inflamari"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Lacarnum Inflamari</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Levicorpus"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Levicorpus</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Anhebezauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Levioso</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Liberacorpus"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Liberacorpus</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Beinklammerfluch"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Locomotor Mortis</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Lichtzauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Lumos</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Lumos_Maxima"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Lumos Maxima</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Lumos_Solem"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Lumos Solem</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Morsmordre"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Morsmordre</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Augenbindenzauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Obscuro</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Brillenreparaturzauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Oculus Reparo</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Periculum"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Periculum</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Dämonsfeuer"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Pestis Incendium</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Piertotum_Locomotor"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Piertotum Locomotor</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Portschlüsselherstellungszauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Portus</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Fluchumkehr-Effekt"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Priori Incantatem</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Schildzauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Protego</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Protego_horribilis"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Protego Horribilis</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Anhaltender_Schutzzauber_einer_Örtlichkeit"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Protego Totalum</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Proteuszauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Proteuszauber</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Schalldämmungszauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Quietus</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Rattenfarbänderungsspruch"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Rattenfarbänderungsspruch</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Wiederbelebungszauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Rennervate</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Kitzelzauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Rictusempra</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Riddikulus"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Riddikulus</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Rote_Funken"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Rote Funken</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Sectumsempra"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Sectumsempra</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Schlangen-Heraufbeschwörungszauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Serpensortia</a
+            >
+          </li>
+          <li data-aos="fade-up">
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Schallverstärkungszauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Sonorus</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Schockzauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Stupor</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Kitzel-Fluch"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Titillando</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://harrypotter.fandom.com/de/wiki/Schwebezauber"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Wingardium Leviosa</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- WORAUF WARTEST DU? -->
+
+    <footer id="links-id" class="hp-footer">
+      <h2 data-aos="fade-up">Worauf wartest du?</h2>
+      <h3 data-aos="fade-up">Tauche ein in die Welt von Harry Potter!</h3>
+      <table>
+        <tr>
+          <th></th>
+          <th data-aos="fade-up">Band</th>
+          <th data-aos="fade-up">Titel</th>
+          <th data-aos="fade-up">Beschreibung</th>
+        </tr>
+        <tr>
+          <td data-aos="fade-up">
+            <img src="./images/hp1.jpg" alt="Stein der Weisen" />
+          </td>
+          <td data-aos="fade-up">Band 1</td>
+          <td data-aos="fade-up">Harry Potter und der Stein der Weisen</td>
+          <td data-aos="fade-up">
+            Bis zu seinem elften Geburtstag glaubt Harry, er sei ein ganz
+            normaler Junge. Doch dann erfährt er, dass er sich an der Schule für
+            Hexerei und Zauberei einfinden soll - denn er ist ein Zauberer! In
+            Hogwarts stürzt Harry von einem Abenteuer ins nächste und muss gegen
+            Bestien, Mitschüler und Fabelwesen kämpfen. Da ist es gut, dass er
+            schon Freunde gefunden hat, die ihm im Kampf gegen die dunklen
+            Mächte zur Seite stehen.
+          </td>
+        </tr>
+        <tr>
+          <td data-aos="fade-up">
+            <img src="./images/hp2.jpg" alt="Kammer des Schreckens" />
+          </td>
+          <td data-aos="fade-up">Band 2</td>
+          <td data-aos="fade-up">Harry Potter und die Kammer des Schreckens</td>
+          <td data-aos="fade-up">
+            Endlich wieder Schule! Einen solchen Seufzer kann nur der ausstoßen,
+            dessen Ferien scheußlich waren: Harry Potter. Doch wie im
+            vergangenen Schuljahr stehen nicht nur Zaubertrankunterricht und
+            Verwandlung auf dem Programm. Ein grauenhaftes Etwas treibt sein
+            Unwesen in der Schule. Wird Harry mit Hilfe seiner Freunde Ron und
+            Hermine das Rätsel lösen und Hogwarts von den dunklen Mächten
+            befreien können?
+          </td>
+        </tr>
+        <tr>
+          <td data-aos="fade-up">
+            <img src="./images/hp3.jpg" alt="Gefangener von Askaban" />
+          </td>
+          <td data-aos="fade-up">Band 3</td>
+          <td data-aos="fade-up">Harry Potter und der Gefangene von Askaban</td>
+          <td data-aos="fade-up">
+            Natürlich weiß Harry, dass das Zaubern in den Ferien strengstens
+            verboten ist, und trotzdem befördert er seine schreckliche Tante mit
+            einem Schwebezauber an die Decke. Die Konsequenz ist normalerweise:
+            Schulverweis! Doch Harry wird behandelt wie ein rohes Ei. Hat es
+            etwa damit zu tun, dass ein gefürchteter Verbrecher es auf Harry
+            abgesehen hat? Mit Ron und Hermine versucht Harry ein Geflecht aus
+            Verrat und Rache aufzudröseln und stößt dabei auf Dinge, die ihn
+            fast an seinem Verstand zweifeln lassen.
+          </td>
+        </tr>
+        <tr>
+          <td data-aos="fade-up">
+            <img src="./images/hp4.jpg" alt="Feuerkelch" />
+          </td>
+          <td data-aos="fade-up">Band 4</td>
+          <td data-aos="fade-up">Harry Potter und der Feuerkelch</td>
+          <td data-aos="fade-up">
+            Harrys viertes Schuljahr in Hogwarts beginnt und ein Wettkampf hält
+            die Schüler in Atem: das Trimagische Turnier, in dem Harry eine
+            Rolle übernimmt, die er sich im Traum nicht vorgestellt hätte.
+            Natürlich steckt dahinter das Böse, das zurück an die Macht drängt:
+            Lord Voldemort. Es wird eng für Harry. Doch auf seine Freunde und
+            ihre Unterstützung kann er sich auch in verzweifelten Situationen
+            verlassen.
+          </td>
+        </tr>
+        <tr>
+          <td data-aos="fade-up">
+            <img src="./images/hp5.jpg" alt="Orden des Phoenix" />
+          </td>
+          <td data-aos="fade-up">Band 5</td>
+          <td data-aos="fade-up">Harry Potter und der Orden des Phönix</td>
+          <td data-aos="fade-up">
+            Es sind Sommerferien und wieder einmal sitzt Harry bei den
+            unsäglichen Dursleys fest. Doch diesmal treibt ihn größere Unruhe
+            denn je - warum erfährt er nichts über die dunklen Mächte, die
+            inzwischen neu erstanden sind? Noch ahnt er nicht, was der
+            geheimnisvolle Orden des Phönix gegen Voldemort ausrichten kann ...
+            Doch dann schlägt der Dunkle Lord wieder zu. Harry muss seine
+            Freunde um sich scharen, sonst gibt es kein Entrinnen.
+          </td>
+        </tr>
+        <tr>
+          <td data-aos="fade-up">
+            <img src="./images/hp6.jpg" alt="Halbblutprinz" />
+          </td>
+          <td data-aos="fade-up">Band 6</td>
+          <td data-aos="fade-up">Harry Potter und der Halbblutprinz</td>
+          <td data-aos="fade-up">
+            Seit Voldemort, der gefährlichste schwarze Magier aller Zeiten,
+            zurückgekehrt ist, herrschen Aufruhr und Gewalt in der magischen
+            Welt. Als Harry und seine Freunde Ron und Hermine zu ihrem sechsten
+            Schuljahr nach Hogwarts kommen, gelten strengste
+            Sicherheitsmaßnahmen in der Zauberschule. Um Harry gegen das Böse zu
+            wappnen, erforscht Dumbledore mit ihm die Geschichte des Dunklen
+            Lords. Ob auch Harrys Zaubertrankbuch, das früher einem
+            »Halbblutprinzen« gehörte, ihm helfen kann?
+          </td>
+        </tr>
+        <tr>
+          <td data-aos="fade-up">
+            <img src="./images/hp7.jpg" alt="Heiligtümer des Todes" />
+          </td>
+          <td data-aos="fade-up">Band 7</td>
+          <td data-aos="fade-up">Harry Potter und die Heiligtümer des Todes</td>
+          <td data-aos="fade-up">
+            An eine Rückkehr nach Hogwarts ist für Harry nicht zu denken. Er
+            muss alles daransetzen, die übrigen Horkruxe zu finden. Erst wenn
+            sie zerstört sind, kann Voldemorts Schreckensherrschaft vergehen.
+            Mit Ron und Hermine an seiner Seite begibt sich Harry auf eine
+            gefährliche Reise durch das ganze Land. Als die drei auf die
+            rätselhaften Heiligtümer des Todes stoßen, muss Harry sich
+            entscheiden. Soll er dieser Spur folgen? Doch welche Wahl er auch
+            trifft - am Ende des Weges wird der Dunkle Lord auf ihn warten ...
+          </td>
+        </tr>
+      </table>
+      <h6><i class="fa-regular fa-copyright"></i>Robert Nimmrich</h6>
+    </footer>
+  </body>
+</html>
